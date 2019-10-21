@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'MTSSanc';
+  src: url('../fonts/MTSSans.05otf_07.06.2019/MTSSans-Medium.otf');
+}
+.container {
+  margin: 80px 0 0 108px;
+}
+.container button {
+  outline: none;
+}
+.buttons {
+  margin: 0 0 50px 0;
+}
+.name {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  display: block;
+  margin: 0 0 24px 0;
+}
+.description {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  display: block;
+  margin: 0 0 40px 0;
+}
+.contents {
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 93px 0 0;
+}
+.content span {
+  margin: 0 0 16px 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #9198A0;
+}
+.content button {
+  border-radius: 4px;
+  height: 44px;
+  width: 99px;
+  font-family: 'MTSSanc';
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 0;
+}
+.buttons-primary .content button {
+  background-color: #e30611;
+  color: #FFFFFF;
+}
+.buttons-primary .content button.hover:hover {
+  background-color: #c7050e;
+}
+.buttons-primary .content button.active:active {
+  background-color: #ac040c;
+}
+.buttons-primary .content button.focus:focus {
+  box-shadow: 0 0 0 4px rgba(227, 6, 17, 0.24);
+}
+.buttons-primary .content button:disabled {
+  color: #BBC1C7;
+  background-color: #E2E5EB;
+}
+.buttons-outline .content button {
+  border: 2px solid #BBC1C7;
+  color: #e30611;
+}
+.buttons-outline .content button.hover:hover {
+  color: #ffffff;
+  background-color: #c7050e;
+  border: 0;
+}
+.buttons-outline .content button.active:active {
+  color: #ffffff;
+  background-color: #ac040c;
+  border: 0;
+}
+.buttons-outline .content button.focus:focus {
+  box-shadow: 0 0 0 4px rgba(227, 6, 17, 0.24);
+}
+.buttons-outline .content button:disabled {
+  color: #BBC1C7;
+  background-color: #E2E5EB;
+  border: 0;
+}
+.buttons-secondary .content button {
+  color: #e30611;
+}
+.buttons-secondary .content button.hover:hover {
+  color: #c7050e;
+}
+.buttons-secondary .content button.active:active {
+  color: #ac040c;
+}
+.buttons-secondary .content button.focus:focus {
+  color: #C7050E;
+  box-shadow: 0 0 0 4px rgba(227, 6, 17, 0.24);
+}
+.buttons-secondary .content button:disabled {
+  color: #BBC1C7;
+}
