@@ -10,92 +10,136 @@
 </head>
 <body>
     <div class="container">
-        <div class="buttons">
-            <div class="buttons-primary">
-                <span class="name">Button primary</span>
-                <span class="description">M, height 44px</span>
-                <div class="contents">
-                    <div class="content">
-                        <span>default</span>
-                        <button>Нажать</button>
+        <div class="menu">
+            <div class="menu-elem active">
+                <span>buttons</span>
+            </div>
+            <div class="menu-elem">
+                <span>inputs</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="buttons" id="buttons">
+                <div class="name">
+                    <span class="names">input type="button"</span>
+                    <span class="names">a href</span>
+                    <span class="names">button type="button"</span>
+                </div>
+                <div class="block default">
+                    <div class="blocks">
+                        <input type="button" value="Название" class="btn border">
                     </div>
-                    <div class="content">
-                        <span>hover</span>
-                        <button class="hover">Нажать</button>
+                    <div class="blocks">
+                        <a href="#" class="btn">Название</a>
                     </div>
-                    <div class="content">
-                        <span>active</span>
-                        <button class="active">Нажать</button>
+                    <div class="blocks">
+                        <button class="btn">Название</button>
                     </div>
-                    <div class="content">
-                        <span>focus</span>
-                        <button class="focus">Нажать</button>
+                </div>
+                <div class="block hover">
+                    <div class="blocks">
+                        <input type="button" value="Название" class="btn">
                     </div>
-                    <div class="content">
-                        <span>disable</span>
-                        <button disabled>Нажать</button>
+                    <div class="blocks">
+                        <a href="#" class="btn border">Название</a>
+                    </div>
+                    <div class="blocks">
+                        <button class="btn">Название</button>
+                    </div>
+                </div>
+                <div class="block active">
+                    <div class="blocks">
+                        <input type="button" value="Название" class="btn">
+                    </div>
+                    <div class="blocks">
+                        <a href="#" class="btn">Название</a>
+                    </div>
+                    <div class="blocks">
+                        <button class="btn border">Название</button>
+                    </div>
+                </div>
+                <div class="block focus">
+                    <div class="blocks">
+                        <input type="button" value="Название" class="btn">
+                    </div>
+                    <div class="blocks">
+                        <a href="#" class="btn">Название</a>
+                    </div>
+                    <div class="blocks">
+                        <button class="btn">Название</button>
+                    </div>
+                </div>
+                <div class="block disable">
+                    <div class="blocks">
+                        <input type="button" value="Название" class="btn">
+                    </div>
+                    <div class="blocks">
+                        <a href="#" class="btn">Название</a>
+                    </div>
+                    <div class="blocks">
+                        <button class="btn">Название</button>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="buttons">
-            <div class="buttons-outline">
-                <span class="name">Button outline</span>
-                <span class="description">M, height 44px</span>
-                <div class="contents">
-                    <div class="content">
-                        <span>default</span>
-                        <button>Нажать</button>
+            <div class="inputs" id="inputs">
+                <div class="name">
+                    <span class="names">input Roboto</span>
+                    <span class="names">input Corpid</span>
+                </div>
+                <div class="block normal">
+                    <div class="blocks">
+                        <input type="text" class="inp">
                     </div>
-                    <div class="content">
-                        <span>hover</span>
-                        <button class="hover">Нажать</button>
-                    </div>
-                    <div class="content">
-                        <span>active</span>
-                        <button class="active">Нажать</button>
-                    </div>
-                    <div class="content">
-                        <span>focus</span>
-                        <button class="focus">Нажать</button>
-                    </div>
-                    <div class="content">
-                        <span>disable</span>
-                        <button disabled>Нажать</button>
+                    <div class="blocks">
+                        <input type="text" class="inp">
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="buttons">
-            <div class="buttons-secondary">
-                <span class="name">Button secondary</span>
-                <span class="description">M, height 44px</span>
-                <div class="contents">
-                    <div class="content">
-                        <span>default</span>
-                        <button>Нажать</button>
+                <div class="block hover">
+                    <div class="blocks">
+                        <input type="text" class="inp">
                     </div>
-                    <div class="content">
-                        <span>hover</span>
-                        <button class="hover">Нажать</button>
+                    <div class="blocks">
+                        <input type="text" class="inp">
                     </div>
-                    <div class="content">
-                        <span>active</span>
-                        <button class="active">Нажать</button>
+                </div>
+                <div class="block active">
+                    <div class="blocks">
+                        <input type="text" class="inp" placeholder="Заполните поле">
                     </div>
-                    <div class="content">
-                        <span>focus</span>
-                        <button class="focus">Нажать</button>
+                    <div class="blocks">
+                        <input type="text" class="inp" placeholder="Заполните поле">
                     </div>
-                    <div class="content">
-                        <span>disable</span>
-                        <button disabled>Нажать</button>
+                </div>
+                <div class="block filled">
+                    <div class="blocks">
+                        <input type="text" required class="inp" placeholder="Успешно заполненное поле" value="Успешно заполненное поле">
+                    </div>
+                    <div class="blocks">
+                        <input type="text" required class="inp" placeholder="Успешно заполненное поле" value="Успешно заполненное поле">
+                    </div>
+                </div>
+                <div class="block disable">
+                    <div class="blocks">
+                        <input type="text" disabled class="inp" placeholder="Успешно заполненное поле" value="Успешно заполненное поле">
+                    </div>
+                    <div class="blocks">
+                        <input type="text" disabled class="inp" placeholder="Успешно заполненное поле" value="Успешно заполненное поле">
+                    </div>
+                </div>
+                <div class="block error">
+                    <div class="blocks">
+                        <input type="text" class="inp" placeholder="Заполните поле">
+                    </div>
+                    <div class="blocks">
+                        <input type="text" class="inp" placeholder="Заполните поле">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
