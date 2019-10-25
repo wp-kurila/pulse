@@ -84,35 +84,29 @@ body button {
   cursor: pointer;
   box-sizing: border-box;
   color: #FFFFFF;
-}
-.default .btn {
   background-color: #e30611;
   height: 88px;
   width: 300px;
 }
-.hover .btn {
+.btn:hover {
   background-color: #c7050e;
-  height: 66px;
-  width: 250px;
 }
-.active .btn {
+.btn:active {
   background-color: #ac040c;
-  height: 44px;
-  width: 200px;
 }
-.focus .btn {
-  background-color: #920007;
-  height: 33px;
-  width: 150px;
+.btn:focus {
+  box-shadow: 0 0 0 4px rgba(227, 6, 17, 0.24);
 }
-.disable .btn {
+.btn:disabled {
   background-color: #e2e5eb;
   color: #BBC1C7;
-  height: 33px;
-  width: 100px;
+  cursor: default;
 }
-.border {
-  box-shadow: 0 0 0 4px rgba(227, 6, 17, 0.24);
+a[disabled="disabled"] {
+  background-color: #e2e5eb;
+  color: #BBC1C7;
+  cursor: default;
+  pointer-events: none;
 }
 .inputs {
   height: 100vh;
@@ -158,18 +152,20 @@ body button {
 .inp::-webkit-input-placeholder {
   color: #BBC1C7;
 }
-.hover .inp {
+.inp:hover {
   border-color: #0097FD;
+  color: #0097FD;
 }
-.active .inp {
+.inp:active {
   border-color: #007CFF;
   color: #007CFF;
 }
-.disable .inp {
-  border-color: rgba(226, 229, 235, 0.56);
-  color: rgba(145, 152, 160, 0.72);
+.inp:focus {
+  box-shadow: 0 0 0 4px rgba(227, 6, 17, 0.24);
 }
-.error .inp {
-  border-color: #F95721;
-  color: #F95721;
+.inp:disabled {
+  background-color: #e2e5eb;
+  color: #BBC1C7;
+  cursor: default;
+  pointer-events: none;
 }
